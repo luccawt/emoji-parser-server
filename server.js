@@ -9,9 +9,6 @@ var emojiRepository = {
 		{ symbol: ':)', imageName: 'simple_smile.png' },
 		{ symbol: ':(', imageName: 'worried.png' },
 		{ symbol: ';)', imageName: 'wink.png'}
-		
-	
-	
 	],
 	//Search 
 	getEmoji: function (symbolEmoji) {
