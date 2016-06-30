@@ -8,9 +8,12 @@ var emojiRepository = {
 	tokensMap: [
 		{ symbol: ':)', imageName: 'simple_smile.png' },
 		{ symbol: ':(', imageName: 'worried.png' },
-		{ symbol: ';)', imageName: 'wink.png'}
+		{ symbol: ';)', imageName: 'wink.png' },
+        { symbol: 'OSfrog', imageName: 'frog.png' },
+        { symbol: ':D', imageName: 'grinning.png' },
+        { symbol: ':P', imageName: 'yum.png' }
 	],
-	//Search 
+	//Search
 	getEmoji: function (symbolEmoji) {
 		for (var i = 0; i < this.tokensMap.length; i++) {
 			if (this.tokensMap[i].symbol === symbolEmoji) {
@@ -50,7 +53,7 @@ app.get('/image/:imageName', function (req, res) {
 		res.writeHead(200, {'Content-Type': 'text/plain'});
 		res.end('Esse emoji nao existe');
 	}
-	
+
 });
 
 app.post('/parserEmoji', function (req, res) {
